@@ -12,7 +12,7 @@ def binary_search(arr, target, start, end):
         #define middle
         mid = (end + start) // 2
   
-        # If the middle is the target, done
+        # if mid is the target, done
         if arr[mid] == target: 
             return mid 
   
@@ -25,7 +25,7 @@ def binary_search(arr, target, start, end):
             return binary_search(arr, target, mid + 1, end) 
   
     else: 
-        # Element is not present in the array 
+        # target is not in the array 
         return -1
         
 
